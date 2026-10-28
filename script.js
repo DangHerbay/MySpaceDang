@@ -21,7 +21,7 @@ botonTema.addEventListener('click', () => {
 });
 
 // 3. Rol que cambia en la portada (edita esta lista con tus propios textos)
-const roles = ['[tu carrera]', '[tu área de interés]', '[lo que quieres ser]'];
+const roles = ['Derecho', 'La vida', 'Legal Tech'];
 const rolEl = document.getElementById('rol-dinamico');
 const sinMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if (!sinMovimiento) {
