@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Nombre Apellido | Perfil profesional</title>
+  <meta name="description" content="Página personal de Tu Nombre Apellido: perfil profesional, habilidades y proyectos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <aside class="lateral">
+    <div class="lateral-top">
+      <p class="marca">TNA</p>
+      <nav aria-label="Secciones">
+        <ul id="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#perfil">Perfil profesional</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#intereses">Intereses</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button id="tema" class="btn-tema" type="button" aria-label="Cambiar entre tema claro y oscuro">Tema oscuro</button>
+  </aside>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <h1>Tu Nombre<br>Apellido</h1>
+      <p class="rol">Estudiante de <span id="rol-dinamico">[tu carrera]</span></p>
+      <p class="intro">Escribe aquí 2 o 3 líneas que te presenten: quién eres, qué estudias y qué tipo de trabajo quieres hacer. Usa un tono natural, como si se lo contaras a alguien que acabas de conocer.</p>
+      <div class="acciones">
+        <a class="btn" href="#proyectos">Ver proyectos</a>
+        <a class="btn btn-sec" href="#contacto">Contactarme</a>
+      </div>
+    </section>
+
+    <section id="perfil">
+      <h2>Perfil profesional</h2>
+      <p class="texto">Resume en un párrafo tu perfil: tu área de interés, tus fortalezas y el tipo de oportunidades que buscas. Menciona qué te diferencia de otros estudiantes de tu carrera.</p>
+
+      <h3>Formación</h3>
+      <ol class="linea">
+        <li>
+          <span class="fecha">2024 - actualidad</span>
+          <strong>[Tu carrera], [Tu universidad]</strong>
+          <p>Ciclo actual, cursos destacados o logros académicos.</p>
+        </li>
+        <li>
+          <span class="fecha">2019 - 2023</span>
+          <strong>[Tu colegio o instituto]</strong>
+          <p>Secundaria completa, talleres o certificaciones.</p>
+        </li>
+      </ol>
+
+      <h3>Experiencia</h3>
+      <ol class="linea">
+        <li>
+          <span class="fecha">2025</span>
+          <strong>[Cargo o actividad], [Organización]</strong>
+          <p>Describe en una frase qué hiciste y qué aprendiste. Si aún no tienes experiencia laboral, usa proyectos académicos o voluntariados.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="filtros" role="group" aria-label="Filtrar habilidades">
+        <button type="button" class="filtro activo" data-filtro="todas">Todas</button>
+        <button type="button" class="filtro" data-filtro="tecnicas">Técnicas</button>
+        <button type="button" class="filtro" data-filtro="blandas">Personales</button>
+      </div>
+      <ul class="habilidades" id="lista-habilidades">
+        <li data-tipo="tecnicas"><span>HTML</span><meter min="0" max="100" value="80"></meter></li>
+        <li data-tipo="tecnicas"><span>CSS</span><meter min="0" max="100" value="70"></meter></li>
+        <li data-tipo="tecnicas"><span>JavaScript</span><meter min="0" max="100" value="55"></meter></li>
+        <li data-tipo="tecnicas"><span>Excel</span><meter min="0" max="100" value="75"></meter></li>
+        <li data-tipo="blandas"><span>Trabajo en equipo</span><meter min="0" max="100" value="85"></meter></li>
+        <li data-tipo="blandas"><span>Comunicación</span><meter min="0" max="100" value="80"></meter></li>
+        <li data-tipo="blandas"><span>Organización del tiempo</span><meter min="0" max="100" value="70"></meter></li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="grid-proy">
+        <article class="proy">
+          <h3>Nombre del proyecto 1</h3>
+          <p>Qué problema resuelve, qué herramientas usaste y cuál fue tu rol.</p>
+          <p class="etiquetas">HTML, CSS</p>
+        </article>
+        <article class="proy">
+          <h3>Nombre del proyecto 2</h3>
+          <p>Describe el resultado y qué aprendiste al hacerlo.</p>
+          <p class="etiquetas">JavaScript</p>
+        </article>
+        <article class="proy">
+          <h3>Nombre del proyecto 3</h3>
+          <p>Puede ser un trabajo del curso, un proyecto personal o una actividad de voluntariado.</p>
+          <p class="etiquetas">Trabajo en equipo</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="intereses">
+      <h2>Intereses y aficiones</h2>
+      <p class="texto">Cuéntanos qué haces fuera de las clases. Esta parte hace que tu página se sienta tuya.</p>
+      <ul class="chips" id="chips">
+        <li><button type="button" data-detalle="Cuenta en una frase por qué te gusta este interés.">Música</button></li>
+        <li><button type="button" data-detalle="Cuenta en una frase por qué te gusta este interés.">Deporte</button></li>
+        <li><button type="button" data-detalle="Cuenta en una frase por qué te gusta este interés.">Viajes</button></li>
+        <li><button type="button" data-detalle="Cuenta en una frase por qué te gusta este interés.">Lectura</button></li>
+      </ul>
+      <p id="detalle-chip" class="detalle" aria-live="polite">Toca un interés para ver más.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p class="texto">Escríbeme a <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a> o usa el formulario.</p>
+      <form id="form" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        <p class="error" id="err-nombre"></p>
+
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" autocomplete="email" required>
+        <p class="error" id="err-correo"></p>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <p class="error" id="err-mensaje"></p>
+
+        <button class="btn" type="submit">Enviar mensaje</button>
+        <p id="estado" class="estado" aria-live="polite"></p>
+      </form>
+      <p class="enlaces"><a href="https://github.com/tu-usuario">GitHub</a> <a href="https://www.linkedin.com/in/tu-perfil">LinkedIn</a></p>
+    </section>
+
+    <footer>
+      <p>© <span id="anio"></span> Tu Nombre Apellido. Curso [nombre del curso], Evaluación Continua 2.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
